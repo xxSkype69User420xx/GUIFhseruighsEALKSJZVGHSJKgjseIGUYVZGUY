@@ -1,8 +1,8 @@
-local env = _G.EGOIegoiSUJGIODVZXVHKJHjkehsngsenawieugeasigyasgyfvuizyv8748752785zSKVSDJFGHsjhe837278578DGFSHFGKJ
+local env = _G.EGOIegoiSUJGIODVZXVHKJHjkehsngsenawieugeasigyasgyfvuizyv8748752785zSKVSDJFGHsjhe837278578DGFSHFGKJ.Esp 
+
 local P = game:GetService("Workspace").Interactables
 local EP = game:GetService("Workspace").activeHostiles
 local Rand = math.random(10000, 1000000)
-
 local UIS = game:GetService("UserInputService")
 
 local function GetDist(P1, P2)
