@@ -1,0 +1,10 @@
+closestMagnitude = math.huge
+closestModel = nil
+for _, Model in workspace.Interactables:GetChildren() do
+	if Model.Name ~= "Workbench" then continue end
+	if (Model:GetPivot().Position - game.Players.LocalPlayer.Character:GetPivot().Position).Magnitude < closestMagnitude then
+		closestMagnitude = (Model:GetPivot().Position - game.Players.LocalPlayer.Character:GetPivot().Position).Magnitude
+		closestModel = Model
+	end
+end
+game.Players.LocalPlayer.Character:PivotTo(closestModel:GetPivot() + Vector3.new(0, 5, 0))
